@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+
+    form {
+      font-weight: bold;
+    }
+  .fname, .lname, .st, .ci, .bio, .img, .ag, .hob, .fav, .fav-pub{
+    display: flex;
+    margin-bottom: 8px;
+  }
+    .fname label {
+      width: 220px;
+   
+ }
+ .lname label {
+      width: 220px;
+ }
+ .st label {
+      width: 220px;
+ }
+
+ .ci label {
+  width: 220px;
+ }
+ .bio label {
+  width: 220px;
+ }
+ .img label {
+  width: 220px;
+ }
+ .ag label {
+  width: 220px;
+ }
+.hob label {
+  width: 220px;
+}
+.fav label {
+  width: 220px;
+}
+.fav-pub label {
+  width: 220px;
+}
+#hobbies {
+  width: 75px;
+}
+#fav-pub-trans {
+  width: 75px;
+}
+#ground {font-weight: bold;}
+
+  </style>
+</head>
+<body>
+  <form>
+    <div class="address">
+    <fieldset>
+    <legend>Your address</legend>
+  <div class="fname">
+  <label for="first-name">First name</label>
+ <input type="text" id="first-name"> <br>
+ </div>
+ <div class="lname">
+<label for="last-name">Last name</label>
+<input type="text" id="last-name"> <br>
+</div>
+<div class="st">
+<label for="street">Street</label>
+<input type="text" id="street"><br>
+</div>
+<div class="ci">
+<label for="city">City</label>
+<input type="text" id="city">
+</div>
+</fieldset>
+</div>
+
+<br>
+<div class="add-details">
+<fieldset>
+  <legend>Additional details</legend>
+<div class="bio">
+<label for="biography">Biography</label>
+<textarea name="" id="biography" cols="20" rows="2"></textarea> 
+</div>
+<div class="img">
+  <label for="image">Image</label>
+  <input type="file" id="image">
+</div>
+<div class="ag">
+<label for="age-group">Age Group</label>
+<select id="age-group">
+  <option value="0-9 Years">0-9 Years</option>
+  <option value="10-19 Years">10-19 Years</option>
+</select>
+</div>
+</fieldset>
+</div>
+
+<br>
+<div class="interests"></div>
+<fieldset>
+  <legend>Interests</legend>
+  <div class="hob"><label for="hobbies">Hobbies</label>
+    <select name="hobbies" id="hobbies" multiple>
+      <option value="Playing">Playing</option>
+      <option value="Dancing">Dancing</option>
+      <option value="Gardening">Gardening</option>
+      <option value="Watching">Watching</option>
+    </select></div>
+
+    <div class="fav">
+      <label for="fav-car">Favourite car?</label>
+      <select id="fav-car">
+        <option value="Volvo">Volvo</option>
+        <option value="Benz">Benz</option>
+      </select>
+      </div>
+
+      <div class="fav-pub">
+        <label for="fav-pub-trans">Favourite public transport?</label>
+        <select name="favourite pub trans" id="fav-pub-trans" multiple>
+          <optgroup label="Ground">
+            <option value="Train">Train</option>
+            <option value="Bus">Bus</option>
+          </optgroup>
+          <optgroup label="Water">
+        </select>
+      </div>
+      </fieldset>
+
+
+</form>
+</body>
+</html>
